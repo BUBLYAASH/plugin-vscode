@@ -1,0 +1,51 @@
+{
+  "name": "vscode-plugin",
+  "displayName": "vscode-plugin",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscode-plugin.helloWorld",
+        "title": "Hello World"
+      },
+      {
+        "command": "vscode-plugin.startRandomTimer",
+        "title": "Start Timer"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "vscode-plugin.toggleTimer",
+        "key": "ctrl+shift+t",
+        "when": "editorIsOpen"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  }, 
+  "devDependencies": {
+    "@types/mocha": "^10.0.8",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.94.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.11.1"
+  },
+  "dependencies": {
+    "node-wav-player": "^1.0.0"
+  }
+}

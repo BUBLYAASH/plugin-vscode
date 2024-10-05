@@ -6,4 +6,4 @@
 
 Открывается тестовое окно, в котором мы можем проверять наш плагин. Можно открыть любой файл и нажать hotkey `CTRL+Shift+T` - он включает/выключает плагин. (для тестового режима рандомное время открытия картинки стоит от 1 до 10 секунд)
 
-Ссылка на Git-репозиторий: [Plugin For VS Code](https://github.com/BUBLYAASH/plugin-vscode)
+**Ссылка на Git-репозиторий: [Plugin For VS Code](https://github.com/BUBLYAASH/plugin-vscode)**

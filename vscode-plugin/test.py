@@ -1,1 +1,1 @@
-print("kakashka") 
+print("kakashka")
